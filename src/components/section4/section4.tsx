@@ -1,20 +1,25 @@
-import React from 'react'
+import { Flex, Text } from "@chakra-ui/react";
+import React from "react";
 
 function Section4() {
   return (
-    <div className='scroll-effect verse flex items-center justify-between'>
-      <div className='container'>
-        <div className='verse-wrap'>
-          <div className='title text-center'>
+    <Flex
+      alignItems={"center"}
+      justifyContent={"space-between"}
+      className="scroll-effect verse"
+    >
+      <div className="container">
+        <div className="verse-wrap">
+          <Text textAlign={"center"} className="title">
             2025 - AltaVerse
-          </div>
-          <div className='verse-img'>
-            <img src='images/ultra-verse.svg' />
+          </Text>
+          <div className="verse-img">
+            <img src="images/ultra-verse.svg" />
           </div>
         </div>
       </div>
-    </div>
-  )
+    </Flex>
+  );
 }
 
 export default Section4;
