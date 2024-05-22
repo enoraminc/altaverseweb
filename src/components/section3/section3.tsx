@@ -1,21 +1,25 @@
-import React from 'react'
+import { Flex, Text } from "@chakra-ui/react";
+import React from "react";
 
 function Section3() {
   return (
-    <div className='scroll-effect era flex items-center justify-between'>
-      <div className='container'>
-        <div className='era-wrap'>
-          <div className='title text-center'>
+    <Flex
+      alignItems={"center"}
+      justifyContent={"space-between"}
+      className="scroll-effect era"
+    >
+      <div className="container">
+        <div className="era-wrap">
+          <Text textAlign={"center"} className="title">
             Era 2022 - Robinhood
-          </div>
-          <div className='era-img'>
-            <img src='images/era.svg'/>
+          </Text>
+          <div className="era-img">
+            <img src="images/era.svg" />
           </div>
         </div>
       </div>
-    </div>
-
-  )
+    </Flex>
+  );
 }
 
-export default Section3
+export default Section3;
